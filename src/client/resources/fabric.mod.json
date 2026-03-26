@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "middleclick-chat-command",
+  "version": "${version}",
+  "name": "WheelAction",
+  "description": "Run a configurable command when middle-clicking a player name in chat.",
+  "authors": ["EternalName"],
+  "contact": {},
+  "license": "CC-BY-ND-4.0",
+  "icon": "assets/middleclick-chat-command/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.stock.middleclickchatcommand.MiddleClickChatCommandClient"
+    ],
+    "modmenu": [
+      "ru.stock.middleclickchatcommand.ModMenuEntry"
+    ]
+  },
+  "mixins": [
+    "middleclick-chat-command.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "1.21.11",
+    "fabric-api": "*"
+  }
+}
+
